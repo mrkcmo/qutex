@@ -13,8 +13,8 @@ services:
             # DEBUG: 1
         volumes:
             - ./services/nginx/dev_default.conf:/etc/nginx/user_conf.d/default.conf
-        ports:
-            - 80:80
+        # ports:
+        #     - 80:80
     bot:
         <<: *interactive
         image: qutex_bot:latest
@@ -26,6 +26,9 @@ services:
             - ./services/bot:/app
             - ./services/bot/tsconfig.json:/app/tsconfig.json
             - ./services/bot/package.json:/app/package.json
+        # secrets:
+        #     - token
+        #     - mongoPassword
     # ui:
     #     <<: *interactive
     #     image: qutex_ui:latest
@@ -50,6 +53,10 @@ services:
     #     volumes:
     #         - ./services/projects/api:/projects/api
     #         - ./services/projects/documents:/projects/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
     # users:
     #     <<: *interactive
     #     image: qutex_users:latest
@@ -62,6 +69,10 @@ services:
     #     volumes:
     #         - ./services/users/api:/users/api
     #         - ./services/users/documents:/users/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
     # auth:
     #     <<: *interactive
     #     image: qutex_auth:latest
@@ -74,6 +85,10 @@ services:
     #     volumes:
     #         - ./services/auth/api:/auth/api
     #         - ./services/auth/documents:/auth/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
     migrate:
         image: qutex_bot:latest
         build:
