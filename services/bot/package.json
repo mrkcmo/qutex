@@ -8,7 +8,7 @@
     "test": "jest -i",
     "start:dev": "nodemon",
     "build": "rimraf build && tsc",
-    "start": "node build/src/index.js",
+    "start": "node build/index.js",
     "lint": "eslint .",
     "qa": "yarn lint && yarn test",
     "start:up": "ts-node src/startup/startup.ts",

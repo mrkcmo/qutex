@@ -13,8 +13,8 @@ services:
             # DEBUG: 1
         volumes:
             - ./services/nginx/dev_default.conf:/etc/nginx/user_conf.d/default.conf
-        ports:
-            - 80:80
+        # ports:
+        #     - 80:80
     bot:
         <<: *interactive
         image: qutex_bot:latest
@@ -26,54 +26,69 @@ services:
             - ./services/bot:/app
             - ./services/bot/tsconfig.json:/app/tsconfig.json
             - ./services/bot/package.json:/app/package.json
-    ui:
-        <<: *interactive
-        image: qutex_ui:latest
-        build:
-            context: services/ui/
-            args: 
-                DEVELOPMENT: "true"
-        env_file: *env_files
-        volumes:
-            - ./services/ui/src:/qutex/src
-            - ./services/ui/public:/qutex/public
-            - compiled_css:/qutex/src/assets/css
-    projects:
-        <<: *interactive
-        image: qutex_projects:latest
-        build:
-            context: .
-            dockerfile: services/_api_service_template/Dockerfile
-            args:
-                SERVICE_PREFIX: projects
-        env_file: *env_files
-        volumes:
-            - ./services/projects/api:/projects/api
-            - ./services/projects/documents:/projects/documents
-    users:
-        <<: *interactive
-        image: qutex_users:latest
-        build:
-            context: .
-            dockerfile: services/_api_service_template/Dockerfile
-            args:
-                SERVICE_PREFIX: users
-        env_file: *env_files
-        volumes:
-            - ./services/users/api:/users/api
-            - ./services/users/documents:/users/documents
-    auth:
-        <<: *interactive
-        image: qutex_auth:latest
-        build:
-            context: .
-            dockerfile: services/_api_service_template/Dockerfile
-            args:
-                SERVICE_PREFIX: auth
-        env_file: *env_files
-        volumes:
-            - ./services/auth/api:/auth/api
-            - ./services/auth/documents:/auth/documents
+        # secrets:
+        #     - token
+        #     - mongoPassword
+    # ui:
+    #     <<: *interactive
+    #     image: qutex_ui:latest
+    #     build:
+    #         context: services/ui/
+    #         args: 
+    #             DEVELOPMENT: "true"
+    #     env_file: *env_files
+    #     volumes:
+    #         - ./services/ui/src:/qutex/src
+    #         - ./services/ui/public:/qutex/public
+    #         - compiled_css:/qutex/src/assets/css
+    # projects:
+    #     <<: *interactive
+    #     image: qutex_projects:latest
+    #     build:
+    #         context: .
+    #         dockerfile: services/_api_service_template/Dockerfile
+    #         args:
+    #             SERVICE_PREFIX: projects
+    #     env_file: *env_files
+    #     volumes:
+    #         - ./services/projects/api:/projects/api
+    #         - ./services/projects/documents:/projects/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
+    # users:
+    #     <<: *interactive
+    #     image: qutex_users:latest
+    #     build:
+    #         context: .
+    #         dockerfile: services/_api_service_template/Dockerfile
+    #         args:
+    #             SERVICE_PREFIX: users
+    #     env_file: *env_files
+    #     volumes:
+    #         - ./services/users/api:/users/api
+    #         - ./services/users/documents:/users/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
+    # auth:
+    #     <<: *interactive
+    #     image: qutex_auth:latest
+    #     build:
+    #         context: .
+    #         dockerfile: services/_api_service_template/Dockerfile
+    #         args:
+    #             SERVICE_PREFIX: auth
+    #     env_file: *env_files
+    #     volumes:
+    #         - ./services/auth/api:/auth/api
+    #         - ./services/auth/documents:/auth/documents
+    #     secrets:
+    #         - token
+    #         - mongoPassword
+    #         - privateKey
     migrate:
         image: qutex_bot:latest
         build:

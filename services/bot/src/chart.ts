@@ -12,7 +12,7 @@ export class Chart {
     /**
      * The chart object itself which holds the low-level library chart.
      */
-    private readonly CHART: IChartJsImage = new ChartJsImage();
+    private readonly CHART = new ChartJsImage();
     /* eslint-disable @typescript-eslint/no-magic-numbers */
 
     /**
@@ -49,7 +49,7 @@ export class Chart {
      * 
      * @returns The binary image data.
      */
-    public get image (): Promise<string> {
+    public get image () {
         return this.CHART.toBinary();
     }
 
@@ -58,7 +58,7 @@ export class Chart {
      * 
      * @returns The chart for this object.
      */
-    public get chart (): IChartJsImage {
+    public get chart () {
         return this.CHART;
     }
 }
