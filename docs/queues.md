@@ -6,7 +6,7 @@ A queue is the bread and butter of Qutex. It is the main component of a project.
 
 ## Creating a New Queue
 
-{% include "auth_project_admin.md" %}
+{% include auth_project_admin.md %}
 
 You can create a qutex queue with the command:
 
@@ -44,7 +44,7 @@ Unfortunately, modifying the name of an existing queue is not currently possible
 
 ## Deleting a Queue
 
-{% include "auth_project_admin.md" %}
+{% include auth_project_admin.md %}
 
 You can delete a qutex queue with the command:
 
@@ -80,7 +80,7 @@ You can delete a qutex queue with the command:
 
 ## Listing the Queues in a Project
 
-{% include "public.md" %}
+{% include public.md %}
 
 Listing all queues in a project is possible with qutex by issuing the following command:
 
@@ -106,7 +106,7 @@ In qutex, any action you perform on a queue within a project is, by default, per
 
 ### Changing the Current Queue
 
-{% include "public.md" %}
+{% include public.md %}
 
 You can change the current queue using the following command:
 
@@ -137,7 +137,7 @@ You can change the current queue using the following command:
 
 ### Operating on Non-Current Queues
 
-{% include "public.md" %}
+{% include public.md %}
 
 By default, all the commands in this section operate on the [current queue](/queues/#what-is-the-current-queue). However, for any of these commands, you can operate on the non-current queue by adding the following to the end of any of the commands:
 
@@ -160,7 +160,7 @@ By default, all the commands in this section operate on the [current queue](/que
 
 ### Adding Myself into a Queue
 
-{% include "public.md" %}
+{% include public.md %}
 
 You can add yourself to the current queue using the following command:
 
@@ -181,7 +181,7 @@ You can add yourself to the current queue using the following command:
 
 ### Removing Myself from a Queue
 
-{% include "public.md" %}
+{% include public.md %}
 
 You can remove yourself from the current queue using the following command:
 
@@ -202,7 +202,7 @@ You can remove yourself from the current queue using the following command:
 
 ### Adding others into a Queue
 
-{% include "auth_project_admin.md" %}
+{% include auth_project_admin.md %}
 
 You can add other members within the same space to the current queue using the following command:
 
@@ -231,7 +231,7 @@ You can add other members within the same space to the current queue using the f
 
 ### Removing Others from a Queue
 
-{% include "auth_project_admin.md" %}
+{% include auth_project_admin.md %}
 
 You can remove other members within the same space from the current queue using the following command:
 
@@ -263,7 +263,7 @@ You can remove other members within the same space from the current queue using 
 
 ### Showing the Members in the Queue
 
-{% include "public.md" %}
+{% include public.md %}
 
 You can list out the members of  a queue by issueing the following command:
 
@@ -292,7 +292,7 @@ You can list out the members of  a queue by issueing the following command:
 
 ### Getting Estimated Time Remaining for Me
 
-{% include "public.md" %}
+{% include public.md %}
 
 Qutex can give you an estimated time remaining until you are moved to the head of the queue. The formulas to do this are outline below:
 
@@ -348,7 +348,7 @@ To get this estimation, you can use the following command:
 
 ### Getting Largest Queue Depth
 
-{% include "public.md" %}
+{% include public.md %}
 
 Qutex can give you the largest queue depth for a given queue over the entire lifetime of that queue. You can do this by invoking the following command:
 

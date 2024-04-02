@@ -10,7 +10,7 @@ A location is either a Cisco Webex group (or room) or a direct message. Location
 
 ## Changing the Registration
 
-{% include "auth_super_admin.md" %}
+{% include auth_super_admin.md %}
 
 You can change the registration of your location to a different project. Currently, in order to do this you must be a super administrator. You can do this by using the following command:
 
@@ -33,7 +33,7 @@ You can change the registration of your location to a different project. Current
 
 ## Check Registration
 
-{% include "public.md" %}
+{% include public.md %}
 
 You can check the registration of your location by using the following command:
 
