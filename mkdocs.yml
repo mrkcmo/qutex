@@ -1,5 +1,6 @@
 
 site_name: Qutex
+site_url: https://mrkcmo.github.io/qutex/ 
 repo_url: https://github.com/mrkcmo/qutex
 site_description: The documentation pages for qutex
 site_author: Chris Fortner
