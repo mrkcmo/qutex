@@ -49,7 +49,7 @@ export class Chart {
      * 
      * @returns The binary image data.
      */
-    public get image () { //eslint-disable-line @typescript-eslint/explicit-function-return-type
+    public get image () { //eslint-disable-line @typescript-eslint/explicit-function-return-type,@typescript-eslint/explicit-module-boundary-types
         return this.CHART.toBinary();
     }
 
@@ -58,7 +58,7 @@ export class Chart {
      * 
      * @returns The chart for this object.
      */
-    public get chart () { //eslint-disable-line @typescript-eslint/explicit-function-return-type
+    public get chart () { //eslint-disable-line @typescript-eslint/explicit-function-return-type,@typescript-eslint/explicit-module-boundary-types
         return this.CHART;
     }
 }
