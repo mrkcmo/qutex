@@ -19,10 +19,10 @@ this one particular function.
 ## Current Status
 
 ### Activity
-<img src="https://img.shields.io/uptimerobot/status/m788024541-def6483d2531449dded3603f"/>
+<img src="https://img.shields.io/uptimerobot/status/m796678605-6e7811f6d5cda8f335109c4c"/>
 
 ### Test Coverage
-<a href="https://codecov.io/gh/amthorn/qutex"><img src="https://codecov.io/gh/amthorn/qutex/branch/master/graph/badge.svg?token=S5Q2H672OI"/>
+<a href="https://codecov.io/gh/mrkcmo/qutex"><img src="https://codecov.io/gh/mrkcmo/qutex/branch/master/graph/badge.svg?token=e03899c1-053a-4266-9c14-4334216f22f5"/>
 </a>
 
 ## Getting Started
