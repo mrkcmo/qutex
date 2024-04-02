@@ -1,17 +1,17 @@
 
 site_name: Qutex
-repo_url: https://github.com/amthorn/qutex
+repo_url: https://github.com/mrkcmo/qutex
 site_description: The documentation pages for qutex
-site_author: Ava Thorn
-copyright: Copyright &copy; 2021 Ava Thorn
+site_author: Chris Fortner
+copyright: Copyright &copy; 2024 Chris Fortner
 strict: true
 edit_uri: ''
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/amthorn
+      link: https://github.com/mrkcmo
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/ava-thorn-384059135/
+      link: https://www.linkedin.com/in/chrisfortner/
 extra_css:
   - css/hint.min.css
 extra_javascript:
