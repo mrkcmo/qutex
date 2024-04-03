@@ -1,7 +1,7 @@
 # APP-Related
 pyjwt==2.0.1
 redis==3.5.3
-Flask==1.1.2
+Flask==2.2.5
 marshmallow==3.10.0
 flask-restx==0.5.1
 Werkzeug==2.3.8
