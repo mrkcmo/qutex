@@ -25,10 +25,9 @@ jobs:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - run: ./services/bot/bin/lint.sh
-      - uses: bahmutov/npm-install@v1.10.1
-        with:
-          run: yarn lint
-          working-directory: services/bot
+      - name: Yarn Lint
+        run: yarn lint
+        working-directory: services/bot
   build-test:
     needs: setup
     runs-on: ubuntu-latest
