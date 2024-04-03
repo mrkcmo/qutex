@@ -70,7 +70,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "chartjs-to-image": "^1.0.4",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "migrate-mongo": "^8.2.2",
     "moment": "^2.29.1",
     "mongoose": "^5.13.20",
