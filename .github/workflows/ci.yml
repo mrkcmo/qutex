@@ -12,8 +12,9 @@ jobs:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - name: Install Dependencies
-        run: yarn install
-        working-directory: services/bot
+        run: |
+          cd services/bot
+          yarn install
   lint:
     needs: setup
     runs-on: ubuntu-latest
