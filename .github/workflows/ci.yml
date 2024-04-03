@@ -15,7 +15,7 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install
-          dir: services/bot
+          dir: 'services/bot'
   lint:
     needs: setup
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       - uses: borales/actions-yarn@v4
         with:
           cmd: lint
-          dir: services/bot
+          dir: 'services/bot'
   build-test:
     needs: setup
     runs-on: ubuntu-latest
@@ -59,7 +59,7 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: test
-          dir: services/bot
+          dir: 'services/bot'
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.0.1
         env:
