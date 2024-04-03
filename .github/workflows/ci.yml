@@ -61,7 +61,7 @@ jobs:
           yarn test
         working-directory: services/bot
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4.0.1
+        uses: codecov/codecov-action@v4.1.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           name: codecov-umbrella
