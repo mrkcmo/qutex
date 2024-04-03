@@ -57,7 +57,7 @@ jobs:
       - env:
           QUTEX_TESTING: true
       - name: Yarn Test
-      - uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v4
         with:
           cmd: test --verbose
           dir: services/bot
