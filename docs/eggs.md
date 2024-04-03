@@ -2,7 +2,7 @@
 
 ## Status
 
-{% include public.md %}
+{% include "public.md" %}
 
 You can get a humorous little status from qutex by sending the command `get status`. Qutex will respond with the message below.
 
@@ -13,7 +13,7 @@ You can get a humorous little status from qutex by sending the command `get stat
 
 ## Puns
 
-{% include public.md %}
+{% include "public.md" %}
 
 You can also tell Qutex to give you a pun using the `pun` command.
 

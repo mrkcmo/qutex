@@ -6,7 +6,7 @@ A project is essentially a collection of [queues](../queues). Only one queue wit
 
 ## Creating a New Project
 
-{% include public.md %}
+{% include "public.md" %}
 
 You can create a qutex project with the command:
 
@@ -54,7 +54,7 @@ Unfortunately, modifying the name of an existing project is not currently possib
 
 ## Deleting A Project
 
-{% include auth_project_admin.md %}
+{% include "auth_project_admin.md" %}
 
 You can delete a qutex project with the following command:
 
@@ -86,7 +86,7 @@ You can delete a qutex project with the following command:
 
 ## Listing All Projects
 
-{% include public.md %}
+{% include "public.md" %}
 
 Listing all projects that you have access to is possible with qutex by issuing the following command:
 

@@ -4,7 +4,7 @@
 
 ## Queue Length History
 
-{% include public.md %}
+{% include "public.md" %}
 
 You can use Qutex to generate some basic graphs that show statistical trends in the data that is collected by Qutex. One such graph is the graph of Queue Length over time. Qutex will also respond a link by which you can view your chart in a browser or download the chart. You can get this graph by invoking the following command:
 

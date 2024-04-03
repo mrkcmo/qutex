@@ -14,7 +14,7 @@ All project administrators should manage the users for that project with respect
 
 ## Adding Administrators
 
-{% include auth_project_admin.md %}
+{% include "auth_project_admin.md" %}
 
 You can add individual admins to a project by tagging them using the following command:
 
@@ -49,7 +49,7 @@ You can add individual admins to a project by tagging them using the following c
 
 ## Removing Administrators
 
-{% include auth_project_admin.md %}
+{% include "auth_project_admin.md" %}
 
 You can remove individual admins to a project by tagging them using the following command:
 
@@ -81,7 +81,7 @@ You can remove individual admins to a project by tagging them using the followin
 
 ## Listing Administrators
 
-{% include public.md %}
+{% include "public.md" %}
 
 Listing all administrators is possible by issuing the following command:
 
