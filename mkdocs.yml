@@ -27,6 +27,7 @@ theme:
   custom_dir: docs/overrides
   features:
     - header.autohide
+    - content.tooltips
   palette:
     - scheme: default
       primary: blue
@@ -38,8 +39,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 plugins:
-  - material/search
-  - material/tooltips
+  - search
   - macros:
       include_dir: docs/blocks
 markdown_extensions:
