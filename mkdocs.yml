@@ -38,8 +38,9 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 plugins:
-  - search
-  - tooltips
+  - material:
+    - search
+    - tooltips
   - macros:
       include_dir: docs/blocks
 markdown_extensions:
