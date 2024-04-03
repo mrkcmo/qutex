@@ -1,1 +1,0 @@
-<span class="tooltip hint--top" aria-label="Project Administrator"><a href="/authorization/#project-administrator"><font color="orange" size=4>:material-shield-account:</font></a></span>
