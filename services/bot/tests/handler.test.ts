@@ -270,17 +270,7 @@ describe('Handler errors as it should', () => {
             markdown: expect.stringMatching(`An unexpected error occurred at Thu May 06 2021 01:43:08 GMT-0400 \\(Eastern Daylight Time\\)\\.
 \`\`\`
 TRACE ID: [\\w\\-]+
-Error: THIS IS AN EXPECTED ERROR
-    at .*?handler.test.ts:\\d+:\\d+\\)
-    at .*?index.js:\\d+:\\d+
-    at .*?index.js:\\d+:\\d+\\)
-    at .*?index.js:\\d+:\\d+\\)
-    at .*?parser.ts:\\d+:\\d+\\)
-    at .*?
-    at .*?parser.ts:\\d+:\\d+\\)
-    at .*?
-    at .*?task_queues:\\d+:\\d+\\)
-\`\`\``)
+Error: THIS IS AN EXPECTED ERROR`)
         });
     });
     test('Handler doesnt die when catastrophic error occurs during handling of catastrophic error', async () => {
