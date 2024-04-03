@@ -12,10 +12,9 @@ jobs:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - name: Install Dependencies
-        uses: borales/actions-yarn@v4.2.0
+        uses: bahmutov/npm-install@v1.10.1
         with:
-          cmd: install
-          dir: 'services/bot'
+          working-directory: services/bot
   lint:
     needs: setup
     runs-on: ubuntu-latest
@@ -26,10 +25,10 @@ jobs:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - run: ./services/bot/bin/lint.sh
-      - uses: borales/actions-yarn@v4.2.0
+      - uses: bahmutov/npm-install@v1.10.1
         with:
-          cmd: lint
-          dir: 'services/bot'
+          run: yarn lint
+          working-directory: services/bot
   build-test:
     needs: setup
     runs-on: ubuntu-latest
@@ -56,10 +55,10 @@ jobs:
           sudo docker run -v $(pwd)/secrets/local/mongoPassword:/run/secrets/mongoPassword -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_DATABASE=qutex -e MONGO_INITDB_ROOT_PASSWORD_FILE=/run/secrets/mongoPassword --name mongo -d -p 27017:27017 mongo:4.4.5
       - env:
           QUTEX_TESTING: true
-        uses: borales/actions-yarn@v4.2.0
+        uses: bahmutov/npm-install@v1.10.1
         with:
-          cmd: test
-          dir: 'services/bot'
+          cmd: yarn test
+          working-directory: services/bot
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.0.1
         env:
