@@ -11,11 +11,6 @@ jobs:
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
-      - uses: actions/cache@v2.1.6
-        id: save-deps
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
       - name: Install Dependencies
         uses: CultureHQ/actions-yarn@master
         with:
@@ -29,11 +24,6 @@ jobs:
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
-      - uses: actions/cache@v2.1.6
-        id: save-deps
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
       - run: ./services/bot/bin/lint.sh
       - uses: CultureHQ/actions-yarn@master
         with:
@@ -57,11 +47,6 @@ jobs:
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
-      - uses: actions/cache@v2.1.6
-        id: save-deps
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
       - run: |
           mkdir -p secrets/local/
           echo `openssl rand -hex 64` >> secrets/local/mongoPassword
