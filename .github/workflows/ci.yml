@@ -17,7 +17,6 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
       - name: Install Dependencies
-        if: steps.save-deps.outputs.cache-hit != 'true'
         uses: CultureHQ/actions-yarn@master
         with:
           args: --cwd services/bot install
