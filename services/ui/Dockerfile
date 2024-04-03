@@ -1,4 +1,4 @@
-FROM node:16.10.0-alpine3.13 as build
+FROM node:18.20.0-alpine3.19 as build
 LABEL maintainer="Ava Thorn" email="avatheavian@gmail.com"
 ARG DEVELOPMENT
 ENV DEVELOPMENT=${DEVELOPMENT}
