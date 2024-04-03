@@ -52,4 +52,4 @@ If you add `| debug` to the end of any command, Qutex will return the debug info
 
 ## Further Support
 
-If you are still having issues or have any feature requests, feel free to open a new issue [here](https://github.com/amthorn/qutex/issues). I'd be happy to help:)
+If you are still having issues or have any feature requests, feel free to open a new issue [here](https://github.com/mrkcmo/qutex/issues). I'd be happy to help:)

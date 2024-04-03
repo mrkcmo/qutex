@@ -6,7 +6,7 @@ If a command requires no permissions, otherwise known as a public command, then 
 
 ## Project Administrator {% include "auth_project_admin_shield.md" %}
 
-If a command requires project administrator permission, then only those who are registered as a [project administrator](/administration) can execute that command.
+If a command requires project administrator permission, then only those who are registered as a [project administrator](./administration) can execute that command.
 
 ## Super Administrator {% include "auth_super_admin_shield.md" %}
 

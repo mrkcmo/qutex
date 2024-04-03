@@ -21,4 +21,4 @@ You can use Qutex to generate some basic graphs that show statistical trends in 
     <img src="../images/queueLengthHistory.png" width=350/>
 
 ???+ note
-    To get these graphs, Qutex leverages [QuickChart](https://quickchart.io/) to build and generate the graphs. No personal data is sent here. See the [Qutex Privacy Policy](https://github.com/amthorn/qutex/wiki/Privacy-Policy) for more information.
+    To get these graphs, Qutex leverages [QuickChart](https://quickchart.io/) to build and generate the graphs. No personal data is sent here. See the [Qutex Privacy Policy](https://github.com/mrkcmo/qutex/wiki/Privacy-Policy) for more information.
