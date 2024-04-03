@@ -49,8 +49,8 @@ markdown_extensions:
   - pymdownx.superfences  # Permits code within admonitions
   - attr_list             # Permits aligning images left/right
   - pymdownx.emoji:       # Used for displaying icons
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:  # Allows mathematical formulas (used in some of the analytics and the "how long" command)
       generic: true
 nav:
