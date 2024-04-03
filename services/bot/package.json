@@ -71,7 +71,7 @@
     "axios": "^1.6.8",
     "chartjs-to-image": "^1.0.4",
     "express": "^4.19.2",
-    "migrate-mongo": "^8.2.2",
+    "migrate-mongo": "^9.0.0",
     "moment": "^2.29.4",
     "mongoose": "^5.13.20",
     "string-similarity": "^4.0.4",
