@@ -1,1 +1,1 @@
-<span class="tooltip hint--top" aria-label="Public"><a href="/authorization/#none"><font color="green" size=4>:material-shield-check:</font></a></span>
+<span class="tooltip hint--top" aria-label="Public"><a href="/qutex/authorization/#none"><font color="green" size=4>:material-shield-check:</font></a></span>
