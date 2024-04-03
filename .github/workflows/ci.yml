@@ -62,8 +62,6 @@ jobs:
         working-directory: services/bot
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.0.1
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           name: codecov-umbrella
