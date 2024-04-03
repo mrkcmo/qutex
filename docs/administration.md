@@ -2,11 +2,11 @@
 
 ## What is an Administrator?
 
-An administrator is someone that is responsible for managing a project and all its components. This includes anything that is stored under the project, which includes [queues](./queues) and other administrators.
+An administrator is someone that is responsible for managing a project and all its components. This includes anything that is stored under the project, which includes [queues](../queues) and other administrators.
 
 ## Administrator Privileges
 
-Administrator privileges are the permissions that a project administrator has. This includes running commands that are not runnable by anyone else. A list of those commands can be found [here](./command_list)
+Administrator privileges are the permissions that a project administrator has. This includes running commands that are not runnable by anyone else. A list of those commands can be found [here](../command_list)
 
 ### Recommendations
 
@@ -39,7 +39,7 @@ You can add individual admins to a project by tagging them using the following c
     You must **tag** the person to add as an admin.
 
 ???+ example
-    <img src="./images/createAdmin.png" width=350/>
+    <img src="../images/createAdmin.png" width=350/>
 
 ???+ note
     You cannot add an admin that already exists.

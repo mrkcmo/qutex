@@ -100,4 +100,4 @@ Listing all projects that you have access to is possible with qutex by issuing t
     ```
 
 ???+ note
-    The only projects that will show up are projects that you have access to. This is determined by the projects on which you are a [project administrator](./authorization/#project-administrators). Your projects will not show up for others and you will not see others' projects.
+    The only projects that will show up are projects that you have access to. This is determined by the projects on which you are a [project administrator](../authorization/#project-administrators). Your projects will not show up for others and you will not see others' projects.
