@@ -2,7 +2,7 @@
 
 ## What is a Queue?
 
-A queue is the bread and butter of Qutex. It is the main component of a project. Queues are what manage the individual people for a particular resource. There can be multiple queues on a project. But only one queue is set as the [default queue.](./queues/#what-is-the-default-queue). In qutex, *people* are stored in queues. Individuals can [add](./queues/#adding-myself-into-a-queue)/[remove](./queues/#removing-myself-from-a-queue) themselves or [add](./queues/#adding-others-into-a-queue)/[remove](./queues/#removing-others-from-a-queue) others.
+A queue is the bread and butter of Qutex. It is the main component of a project. Queues are what manage the individual people for a particular resource. There can be multiple queues on a project. But only one queue is set as the [default queue.](../queues/#what-is-the-default-queue). In qutex, *people* are stored in queues. Individuals can [add](../queues/#adding-myself-into-a-queue)/[remove](../queues/#removing-myself-from-a-queue) themselves or [add](../queues/#adding-others-into-a-queue)/[remove](../queues/#removing-others-from-a-queue) others.
 
 ## Creating a New Queue
 
@@ -33,10 +33,10 @@ You can create a qutex queue with the command:
 ???+ note
     Your queue will automatically be put in uppercase regardless of how it was entered
 
-When you issue the `create queue` command, Qutex will create an empty queue for you. This queue will not be utilized until you set it as the [current queue](./queues/#changing-the-current-queue).
+When you issue the `create queue` command, Qutex will create an empty queue for you. This queue will not be utilized until you set it as the [current queue](../queues/#changing-the-current-queue).
 
 ???+ success
-    You can verify your queue was created by issueing the [`list queues` command](./queues/#listing-the-queues-in-a-project)
+    You can verify your queue was created by issueing the [`list queues` command](../queues/#listing-the-queues-in-a-project)
 
 ## Modifying a Queue Name
 
@@ -75,7 +75,7 @@ You can delete a qutex queue with the command:
     Queue deletions are permanant and they cannot be recovered after deletion.
 
 ???+ success
-    You can verify your queue was deleted by issueing the [`list queues` command](./queues/#listing-the-queues-in-a-project)
+    You can verify your queue was deleted by issueing the [`list queues` command](../queues/#listing-the-queues-in-a-project)
 
 
 ## Listing the Queues in a Project
@@ -94,7 +94,7 @@ Listing all queues in a project is possible with qutex by issuing the following 
     ```
 
 ???+ note
-    When you list the queues, an asterisk (*) will appear next to the current queue. You can change this by using the `set current queue to`(./queues/#changing-the-current-queue) command
+    When you list the queues, an asterisk (*) will appear next to the current queue. You can change this by using the `set current queue to`(../queues/#changing-the-current-queue) command
 
 ## What is the Default Queue?
 
@@ -102,7 +102,7 @@ The default queue is the queue that is automatically created in your project whe
 
 ## What is the Current Queue?
 
-In qutex, any action you perform on a queue within a project is, by default, performed on the current queue. Because you can have multiple queues in a project, you are able to change the current queue as the needs of your resource management demands. You can also use the [queue suffix](./queues/#operating-on-non-current-queues) with relevant commands to operate on non-current queues.
+In qutex, any action you perform on a queue within a project is, by default, performed on the current queue. Because you can have multiple queues in a project, you are able to change the current queue as the needs of your resource management demands. You can also use the [queue suffix](../queues/#operating-on-non-current-queues) with relevant commands to operate on non-current queues.
 
 ### Changing the Current Queue
 
@@ -131,7 +131,7 @@ You can change the current queue using the following command:
     Every project must always have one and only one current queue at a time. If you try to delete the current queue, you will not be permitted to do so until the current queue is changed.
 
 ???+ success
-    You can verify the current queue was changed by issueing the [`list queues` command](./queues/#listing-the-queues-in-a-project)
+    You can verify the current queue was changed by issueing the [`list queues` command](../queues/#listing-the-queues-in-a-project)
 
 ## Using a Queue
 
@@ -139,7 +139,7 @@ You can change the current queue using the following command:
 
 {% include "public.md" %}
 
-By default, all the commands in this section operate on the [current queue](./queues/#what-is-the-current-queue). However, for any of these commands, you can operate on the non-current queue by adding the following to the end of any of the commands:
+By default, all the commands in this section operate on the [current queue](../queues/#what-is-the-current-queue). However, for any of these commands, you can operate on the non-current queue by adding the following to the end of any of the commands:
 
 === "Generic"
     ```
@@ -177,7 +177,7 @@ You can add yourself to the current queue using the following command:
     You can add yourself as many times as you want into a project.
 
 ???+ success
-    You can verify that you were added to the current queue by issueing the [`get queue` command](./queues/#showing-the-members-in-a-queue)
+    You can verify that you were added to the current queue by issueing the [`get queue` command](../queues/#showing-the-members-in-a-queue)
 
 ### Removing Myself from a Queue
 
@@ -198,7 +198,7 @@ You can remove yourself from the current queue using the following command:
     If you exist more than once within the queue, the *front-most* queue position will be removed.
 
 ???+ success
-    You can verify that you were removed from the current queue by issueing the [`get queue` command](./queues/#showing-the-members-in-a-queue)
+    You can verify that you were removed from the current queue by issueing the [`get queue` command](../queues/#showing-the-members-in-a-queue)
 
 ### Adding others into a Queue
 
@@ -227,7 +227,7 @@ You can add other members within the same space to the current queue using the f
     You must **tag** the person to add them into the queue.
 
 ???+ success
-    You can verify that you successfully added the target person to the current queue by issueing the [`get queue` command](./queues/#showing-the-members-in-a-queue)
+    You can verify that you successfully added the target person to the current queue by issueing the [`get queue` command](../queues/#showing-the-members-in-a-queue)
 
 ### Removing Others from a Queue
 
@@ -259,7 +259,7 @@ You can remove other members within the same space from the current queue using 
     If you exist more than once within the queue, the *front-most* queue position will be removed.
 
 ???+ success
-    You can verify that you successfully removed the target person from the current queue by issueing the [`get queue` command](./queues/#showing-the-members-in-a-queue)
+    You can verify that you successfully removed the target person from the current queue by issueing the [`get queue` command](../queues/#showing-the-members-in-a-queue)
 
 ### Showing the Members in the Queue
 
