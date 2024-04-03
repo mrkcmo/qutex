@@ -7,27 +7,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - name: Install Dependencies
-        uses: CultureHQ/actions-yarn@master
+        uses: borales/actions-yarn@v4
         with:
-          args: --cwd services/bot install
+          cmd: install
+          dir: services/bot
   lint:
     needs: setup
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
       - run: ./services/bot/bin/lint.sh
-      - uses: CultureHQ/actions-yarn@master
+      - uses: borales/actions-yarn@v4
         with:
-          args: --cwd services/bot lint
+          cmd: lint
+          dir: services/bot
   build-test:
     needs: setup
     runs-on: ubuntu-latest
@@ -43,7 +45,7 @@ jobs:
         with:
           timezoneLinux: "America/New_York"
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 18.20.0
       - uses: actions/checkout@master
