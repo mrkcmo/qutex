@@ -27,7 +27,7 @@ jobs:
       - run: ./services/bot/bin/lint.sh
       - name: Yarn Lint
         run: |
-          yarn add eslint@7.32.0
+          yarn add eslint@^7.32.0
           yarn lint
         working-directory: services/bot
   build-test:
@@ -57,7 +57,7 @@ jobs:
       - env:
           QUTEX_TESTING: true
         run: |
-          yarn add jest@26.6.3
+          yarn add jest@^26.6.3
           yarn test
         working-directory: services/bot
       - name: Upload coverage to Codecov
