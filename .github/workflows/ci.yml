@@ -27,7 +27,7 @@ jobs:
       - run: ./services/bot/bin/lint.sh
       - name: Yarn Lint
         run: |
-          yarn install eslint
+          yarn add eslint
           yarn lint
         working-directory: services/bot
   build-test:
