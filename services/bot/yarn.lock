@@ -6224,9 +6224,9 @@ mkpath@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/mkpath/-/mkpath-0.1.0.tgz"
 
-mock-fs@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/mock-fs/-/mock-fs-5.1.1.tgz#d4c95e916abf400664197079d7e399d133bb6048"
+mock-fs@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/mock-fs/-/mock-fs-5.2.0.tgz#3502a9499c84c0a1218ee4bf92ae5bf2ea9b2b5e"
 
 mockdate@^3.0.5:
   version "3.0.5"
